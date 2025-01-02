@@ -14,7 +14,7 @@ pipeline {
                 #!/bin/bash
                 echo "Setting up Python virtual environment"
                 python3 -m venv venv
-                source venv/bin/activate
+                . venv/bin/activate
                 pip install --upgrade pip
                 pip install -r requirements.txt
                 pip install allure-pytest
@@ -26,8 +26,8 @@ pipeline {
             steps {
                 sh '''
                 #!/bin/bash
-                echo "Activating virtual environment and running tests"
-                source venv/bin/activate
+                echo "Running tests"
+                . venv/bin/activate
                 pytest --alluredir=allure-results
                 '''
             }
