@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: '', branch: 'master'
+                git url: 'https://github.com/Bana143123/py_test.git', branch: 'master'
             }
         }
 
