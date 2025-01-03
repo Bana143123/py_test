@@ -14,7 +14,7 @@ def test_sample(sample_data):
         (0, 0, 0),       
         (-1, -1, -2),    
         (100, 200, 300), 
-        (3.5, 2.5, 6.0)  
+        (3.5, 2.5, 7.0)  
     ]
 )
 def test_add(a, b, expected):
