@@ -1,5 +1,4 @@
 import pytest
-from calculator import add
 
 @pytest.fixture
 def sample_data():
@@ -19,5 +18,5 @@ def test_sample(sample_data):
     ]
 )
 def test_add(a, b, expected):
-    assert add(a, b) == expected
+    assert a + b == expected
 
